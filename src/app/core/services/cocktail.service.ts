@@ -15,9 +15,9 @@ export class CocktailService {
   constructor(private http: HttpClient) { }
 
   getCocktails(): Observable<any> {
-    return this.http.get(this.baseUrl + '/drinks/');
+    return this.http.get('http://murmuring-bayou-72324.herokuapp.com/drinks');
   }
     addCockTail(data: any): Observable<any> {
-    return this.http.post(this.baseUrl + '/drinks/',data);
+    return this.http.post('http://murmuring-bayou-72324.herokuapp.com/drinks',data);
   }
 }
