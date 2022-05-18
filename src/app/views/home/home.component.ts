@@ -56,7 +56,7 @@ getDrinks(){
   this.loadingDrinks = true
     this.localdrinkService.getDrinks().subscribe((data)=>{
       let drinks = data.drink;
-      const size = 1
+      const size = 2
       const items = drinks.slice(0, size)
       this.drinksList = items
       this.loadingDrinks=false
