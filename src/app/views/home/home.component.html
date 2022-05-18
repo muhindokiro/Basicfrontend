@@ -26,6 +26,27 @@
   </div>
 </div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let drinks of drinksList">
+        <div class="card" style="width: 300px">
+            <img src="https://murmuring-bayou-72324.herokuapp.com/localdrinks/{{ drinks.image }}" class="card-img" id="image"  alt="Image unable to display"/>
+
+            <div class="card-body">
+              <h5 class="card-title">Cocktail: {{ drinks.name }}</h5>
+              <hr />
+              <p class="card-text">
+                Ingredients: {{ drinks.ingredients }}
+              </p>
+              <hr />
+              <p class="card-text">Description: {{ drinks.description }}</p>
+            </div>
+
+        </div>
+      <br>
+    </div>
+  </div>
+</div>
 
 
 <!-- Modal -->
