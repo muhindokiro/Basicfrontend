@@ -13,6 +13,9 @@ export class LocaldrinksService {
 
   constructor(private http: HttpClient) { }
 
-
+    getDrinks(): Observable<any> {
+      return this.http.get(this.baseUrl + '/localdrinks/');
+        // return this.http.get('https://murmuring-bayou-72324.herokuapp.com/localdrinks')
+  }
 
 }
