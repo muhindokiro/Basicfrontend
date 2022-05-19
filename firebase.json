@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
-      "site": "ng-template",
+    "public": "dist/angular-template",
     "ignore": [
       "firebase.json",
       "**/.*",
